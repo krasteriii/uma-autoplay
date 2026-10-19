@@ -7,10 +7,14 @@ included - receives them as it would from a real device. Needs write access to
 
 utils/control.py is what the bot calls. This is only the device plumbing.
 """
-import fcntl
 import os
 import struct
 import time
+
+try:
+  import fcntl
+except ImportError:   # Windows: no fcntl, and check() reports there is no /dev/uinput
+  fcntl = None
 
 UINPUT_PATH = "/dev/uinput"
 

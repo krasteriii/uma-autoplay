@@ -28,6 +28,7 @@ LOCALLOW = ("AppData", "LocalLow", "Cygames", "Umamusume", "master", "master.mdb
 STEAM_ROOTS = [
   "~/.local/share/Steam",
   "~/.steam/steam",
+  "C:/Users/Usuario/Desktop/Games/Steam",
   "~/.var/app/com.valvesoftware.Steam/.local/share/Steam",   # Flatpak
 ]
 
